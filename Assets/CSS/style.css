@@ -460,7 +460,8 @@ footer p{
   }
 
   .cloud2{
-    top: 255px;
+    top: 235px;
+    z-index:-1;
   }
 
   .outer_bg h3{
