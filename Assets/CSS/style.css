@@ -11,6 +11,8 @@ body {
 
 section{
   padding: 5% 10%;
+  width: 100%;
+  margin: auto;
 }
 
 :root {
@@ -80,7 +82,7 @@ section{
   left: 130px;
   top: 300px;
 }
-
+/* cloud animation */
 @keyframes rotate {
   0% {
     transform: translateX(0%);
@@ -99,6 +101,7 @@ section{
   }
 }
 
+/* hero text animation */
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
@@ -111,6 +114,7 @@ section{
   }
 }
 
+/* h2 animation */
 @keyframes fadeIn {
   0% {
     transform: translateX(100%);
@@ -126,6 +130,7 @@ section{
 /* feature section  */
 #feature {
   height: auto;
+  
 }
 
 /* section Titles  */
@@ -136,9 +141,16 @@ section{
     color: var(--btn-body-bg);
     font-size: 1rem;
 }
+
+/* to align both cards content inside card. */
+.feature_container, .project_card{
+  justify-content: center;
+  align-items: center;
+}
+
 .feature_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 19px;
   padding: 15px;
 }
@@ -146,8 +158,6 @@ section{
 .project_card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   box-shadow: 0 4px 6px var(--light-brawn);
   border-radius: 5px;
@@ -251,8 +261,8 @@ section{
   }
 }
 
+/* skills section  */
 #skills{
- 
   margin: 3% 0;
   background-color: #cbf5f5;
 }
@@ -268,7 +278,7 @@ section{
 .skills_description p, .timeline-item p{
   line-height: 1.5;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 .logo1{
   width: 90px;
@@ -305,6 +315,58 @@ section{
   background-color: #6f8a85;
   border-radius: 50%;
 }
+
+/* about section  */
+#about{
+padding: 0;
+}
+
+#about .inner_bg{
+  background-image: url('../Images/bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.outer_bg{
+  background-color: rgba(70, 73, 73, 0.918);
+  width: 100%;
+  padding: 15%;
+  text-align: center;
+  color: #cbf5f5;
+}
+
+.outer_bg h3{
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.outer_bg p{
+  font-size: 1.2rem;
+  line-height: 1.7;
+
+}
+
+.outer_bg p:nth-child(2){
+  font-weight: bold;
+  color: #3cb2b6;
+}
+
+
+.outer_bg p:nth-child(3){
+  color: yellowgreen;
+  font-size: .9rem;
+}
+
+/* cta section  */
+#cta div{
+  font-size: 1.5rem;
+  color: #11999e;
+  text-align: center;
+}
+
 
 /* footer section  */
 footer{
@@ -380,57 +442,34 @@ footer p{
   }
 }
 
+@media(max-width: 440px){
+  #hero h1{
+    font-size: 2rem;
+  }
 
-/* about section  */
-#about{
-padding: 0;
+  #hero h2{
+    font-size: 1rem;
+  }
+
+  .cloud1, .cloud2{
+    width: 90px;
+  }
+
+  .cloud2{
+    top: 250px;
+  }
+
+  .outer_bg h3{
+    font-size: 1.6rem;
+  }
+
+  .outer_bg p:nth-child(2){
+    font-size: 1rem;
+  }
+
+  .outer_bg p:nth-child(3){
+    font-size: .7rem;
+  }
 }
-
-#about .inner_bg{
-  background-image: url('../Images/bg2.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-.outer_bg{
-  background-color: rgba(70, 73, 73, 0.918);
-  width: 100%;
-  padding: 15%;
-  text-align: center;
-  color: #cbf5f5;
-}
-
-.outer_bg h3{
-  font-size: 2rem;
-  font-weight: 800;
-
-}
-
-.outer_bg p{
-  font-size: 1.2rem;
-  line-height: 1.7;
-
-}
-
-.outer_bg p:nth-child(2){
-  font-weight: bold;
-  color: #3cb2b6;
-}
-
-
-.outer_bg p:nth-child(3){
-  color: yellowgreen;
-  font-size: .9rem;
-}
-
-/* cta section  */
-#cta div{
-  font-size: 1.5rem;
-  color: #11999e;
-  text-align: center;
-}
-
 
 
