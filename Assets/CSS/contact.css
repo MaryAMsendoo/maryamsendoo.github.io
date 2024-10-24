@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "poppins", "roboto", sans-serif;
+  }
+
+  :root {
+    --btn-body-bg: #1e1f25;
+    --btn-bg: #000;
+    --body: #eaf6f6;
+    --color1: #66bfbf;
+    --color2: #11999e;
+    --color3: #2bc4ad;
+    --color-light1: #dcf4f4;
+    --color-light2: #bddcdc;
+    --color-light-gray: #40514e;
+    --ash-color: rgb(161 182 204);
+    --color-brawn: rgb(101 54 20);
+    --light-brawn: rgb(116 87 57);
+    --off-color: rgb(217 204 209);
+  }
+
+  body {
+    background-color: var(--btn-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 4;
+    font-size: 1.5rem;
+    color: #bddcdc;
+  }
+
+ 
+  .container a{
+    text-decoration: none;
+    margin-left: 20px;
+  } 
+
+  .container button{
+    padding: 5px 20px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+  color: var(--color-light1);
+  text-align: center;
+  font-size: 0.9rem;
+  border-image: linear-gradient(
+    119deg,
+    #73c5c5,
+    #3cb2b6,
+    #2bc4ad,
+    #dcf4f4,
+    #bddcdc,
+    rgb(161 182 204));
+    border-image-slice: 1;
+  }
+
+  .container .icon{
+    background: linear-gradient(
+      119deg,
+      #73c5c5,
+      #3cb2b6,
+      #2bc4ad,
+      #dcf4f4,
+      #bddcdc,
+      rgb(161 182 204)
+    );
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+    animation: transform 4s infinite;
+  }
+  
+  .container:hover .icon{
+    background: linear-gradient(
+      119deg,
+      rgb(161 182 204),
+      #bddcdc,
+      #dcf4f4,
+      #2bc4ad,
+      #3cb2b6,
+      #73c5c5
+    );
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    transform: scale();
+    animation: scale-hover;
+  }
+  
+ 
