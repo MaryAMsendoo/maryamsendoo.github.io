@@ -444,8 +444,8 @@ footer p{
 
 @media(max-width: 440px){
   #hero{
-    padding-top: 5%;
-    paddind-bottom: 5%;
+    padding-top: 10%;
+    paddind-bottom: 10%;
   }
   #hero h1{
     font-size: 2rem;
@@ -460,7 +460,7 @@ footer p{
   }
 
   .cloud2{
-    top: 250px;
+    top: 275px;
   }
 
   .outer_bg h3{
