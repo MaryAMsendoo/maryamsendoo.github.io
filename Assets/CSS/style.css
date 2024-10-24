@@ -443,6 +443,10 @@ footer p{
 }
 
 @media(max-width: 440px){
+  #hero{
+    padding-top: 5%;
+    paddind-bottom: 5%;
+  }
   #hero h1{
     font-size: 2rem;
   }
