@@ -57,6 +57,21 @@
     border-image-slice: 1;
   }
 
+.container button:hover{
+  transform: scale(1.2);
+ border-image: linear-gradient(
+    119deg,
+    rgb(161 182 204),
+    #bddcdc,
+    #dcf4f4,
+    #2bc4ad,
+    #3cb2b6,
+    #73c5c5
+  );
+  border-image-slice: 1;
+  transition: all .6s;
+}
+
   .container .icon{
     background: linear-gradient(
       119deg,
@@ -72,20 +87,4 @@
     animation: transform 4s infinite;
   }
   
-  .container:hover .icon{
-    background: linear-gradient(
-      119deg,
-      rgb(161 182 204),
-      #bddcdc,
-      #dcf4f4,
-      #2bc4ad,
-      #3cb2b6,
-      #73c5c5
-    );
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;  
-    transform: scale();
-    animation: scale-hover;
-  }
   
- 

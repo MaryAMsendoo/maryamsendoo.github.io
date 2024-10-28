@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary || Front-End</title>
+    <title>Mary || Front-End Developer</title>
     <link rel="icon" href="./Assets/Images/logo1.png">
     <!-- custom css  -->
     <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- embeded google fonts family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,28 +28,18 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark px-3 fs-5 navbar_bg" id="nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./Assets/Images/logo1.png" alt="" class="logo"></a>
-                <button class="navbar-toggler mx-2 text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                </i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" target="_blank" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar  navbar-expand-lg fs-5 text-light navbar-dark navbar_bg">
+            <a className='navbar-brand ' href='#c'><img alt='' src="./Assets/Images/logo1.png" class="logo"></img></a>
+            <button class="navbar-toggler text-white" type="button" data-bs-target="#navbarTogglerDemo02"
+                data-bs-toggle="collapse" aria-controls="navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+                    <li class="nav-item login"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -67,7 +57,7 @@
 
         <!-- feature section -->
         <section id="feature">
-            <!-- <h2>Project:</h2> -->
+            <h2>Project:</h2>
             <div class="feature_container">
                 <div class="project_card">
                     <div class="project_img_container">
@@ -75,10 +65,10 @@
                     </div>
                     <div class="description">
                         <h6>Budget App:</h6>
-                        <p>Use to estimate base on budget target amount.</p>
+                        <p>Used to estimate base on budget target amount.</p>
                     </div>
                     <div class="btn_box">
-                        <button class=" fs-5">Inspect</button>
+                        <a href="https://maryamsendoo.github.io/BudgetApp/" target="_blank"><button class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
 
@@ -87,11 +77,11 @@
                         <img class="project_img" src="./Assets/Images/project2.png" alt="">
                     </div>
                     <div class="description">
-                        <h6>Budget App:</h6>
-                        <p>Use to estimate base on budget target amount.</p>
+                        <h6>Event Ticketing site(interface):</h6>
+                        <p>Used to book an Event remotely.</p>
                     </div>
                     <div class="btn_box">
-                        <button class=" fs-5">Inspect</button>
+                       <a href="https://maryamsendoo.github.io/EventTicketingWebSite/" target="_blank"> <button class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
 
@@ -104,7 +94,7 @@
                         <p>Online Voting System using voter ID authentication</p>
                     </div>
                     <div class="btn_box">
-                        <button class=" fs-5">Inspect</button>
+                        <a href="https://maryamsendoo.github.io/NigeriaAutomatedVotingSystem/" target="_blank"><button class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
             </div>
@@ -122,7 +112,7 @@
                         </div>
 
                         <div>
-                            <p class="text mx-2">Comfortable in creating well-structured, semantic HTML for clean, readable and responsive web design. 
+                            <p class="text mx-2">Comfortable with creating well-structured, semantic HTML for clean, readable and responsive web design. 
                         </div>
                     </div>
 
@@ -141,8 +131,8 @@
                             <img src="./Assets/Images/bstp1.png" alt="" class="logo2 mx-3">
                         </div>
                         <div>
-                            <p class="text mx-2">Proficient in Bootstrap to develop responsive, mobile-firs designs with ease, 
-                                 ensuring aesthetic, consistency, and efficiency across various screen sizes and devices.
+                            <p class="text mx-2">Proficient in Bootstrap to develop responsive, mobile-first designs with ease, 
+                                 ensuring aesthetics, consistency, and efficiency across various screen sizes and devices.
                             </p>
                         </div>
                     </div>
@@ -203,7 +193,7 @@
                     <div class="dot"></div>
                     <p><b>Personal Portfolio Website: </b> Developed a fully responsive portfolio website using 
                     HTML, CSS, and bootstrap, showcasing my web development projects and skills. The site includes smooth 
-                navigation and mobile-friently.</p>
+                navigation and mobile-friendly.</p>
                 </div>
             </div>
          </section>
@@ -217,16 +207,15 @@
                 <!-- <h2>What you should know about me:</h2> -->
                 <h3>Apenumbe Mary Msendoo</h3>
                 <p>Front-End Developer/Baker</p>
-                <p>Benue State, Nigeria</p>
                 <p>know:</p>
                 <p>I am a passionate and deducated front-end Web developer with a foundation in technologies 
                     such as HTML, CSS Bootstrap, JavaScript and React. Throughout my Journey, I focus in creating dynamic, 
-                    responsive, and user-friendly web application. I enjoy problem solving and am always eager 
+                    responsive, and user-friendly web applications. I enjoy problem solving and am always eager 
                     to learn and apply new technologies to improve my craft. 
                 </p>
 
                 <p>In addition to my Tech Journey, I am also a baker. This has allowed me to blend creativity and precision 
-                    in both the digital and culinary arts. I approach every project with attention to detail and a 
+                    in both the digital and culinary arts. I approach every project with attention to details and a 
                     commitment to delivering quality results.
                 </p>
 
@@ -287,9 +276,9 @@
 
 
     <!-- bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

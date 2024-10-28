@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Montserrat", "poppins", "roboto", sans-serif;
 }
 
@@ -37,11 +37,16 @@ section{
   color: var(--light);
   font-weight: 500;
   font-family: inherit;
+  padding: 1% 4%;
+}
+
+header{
+  padding: auto 10px;
 }
 
 .logo {
-  margin: 0;
-  width: 15%;
+  width: 80px;
+  display: inline;
 }
 
 /* hero section  */
@@ -58,7 +63,7 @@ section{
 #hero h1 {
   font-size: 4rem;
   font-weight: 800;
-  font-family: "Sacramento-bold", cursive;
+  font-family: "Sacramento-bold", cursive, "Montserrat", "poppins", "roboto", sans-serif;
   color: var(--light-brawn);
   position: relative;
   animation: slideIn 3s ease forwards;
@@ -330,7 +335,7 @@ padding: 0;
 }
 
 .outer_bg{
-  background-color: rgba(70, 73, 73, 0.918);
+  background-color: rgba(70, 73, 73, 0.884);
   width: 100%;
   padding: 15%;
   text-align: center;
@@ -442,9 +447,16 @@ footer p{
   }
 }
 
+
 @media(max-width: 440px){
+  #hero{
+    padding-top: 10%;
+    padding-bottom: 10% ;
+  }
+
   #hero h1{
     font-size: 2rem;
+    font-family: "Sacramento-bold", "Montserrat", Arial, Helvetica, sans-serif;
   }
 
   #hero h2{
@@ -456,7 +468,7 @@ footer p{
   }
 
   .cloud2{
-    top: 250px;
+    top: 270px;
   }
 
   .outer_bg h3{
