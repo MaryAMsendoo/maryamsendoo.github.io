@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- embeded google fonts family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,41 +23,61 @@
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar  navbar-expand-lg fs-5 text-light navbar-dark navbar_bg">
-            <a className='navbar-brand ' href='#c'><img alt='' src="./Assets/Images/logo1.png" class="logo"></img></a>
-            <button class="navbar-toggler text-white" type="button" data-bs-target="#navbarTogglerDemo02"
-                data-bs-toggle="collapse" aria-controls="navbarTogglerDemo02">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
-                    <li class="nav-item login"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a></li>
-                </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./Assets/Images/logo1.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feature">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+        <!-- hero section  -->
+        <section id="hero">
+            <img class="cloud1" src="./Assets/Images/cloud.png" alt="">
+            <h1>Apenumbe Mary Msendoo</h1>
+            <h2 class="font-effect-neon">&lt;Front-End Developer/&gt;</h2>
+            <img class="cloud2" src="./Assets/Images/cloud.png" alt="">
+        </section>
+
     </header>
 
 
     <main>
-        <!-- hero section  -->
-        <section id="hero">
-            <img class="cloud1" src="./Assets/Images/cloud.png" alt="">
-            <h1>APENUMBE MARY MSENDOO</h1>
-            <h2>&lt;Front-End Developer/&gt;</h2>
-            <img class="cloud2" src="./Assets/Images/cloud.png" alt="">
-        </section>
 
-
-        <!-- feature section -->
-        <section id="feature">
-            <h2>Project:</h2>
+         <!-- feature section -->
+         <section id="feature">
+            <h2 class="section-title">Projects</h2>
             <div class="feature_container">
                 <div class="project_card">
                     <div class="project_img_container">
@@ -68,7 +88,8 @@
                         <p>Used to estimate base on budget target amount.</p>
                     </div>
                     <div class="btn_box">
-                        <a href="https://maryamsendoo.github.io/BudgetApp/" target="_blank"><button class=" fs-5">Inspect</button></a>
+                        <a href="https://maryamsendoo.github.io/BudgetApp/" target="_blank"><button
+                                class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
 
@@ -81,7 +102,8 @@
                         <p>Used to book an Event remotely.</p>
                     </div>
                     <div class="btn_box">
-                       <a href="https://maryamsendoo.github.io/EventTicketingWebSite/" target="_blank"> <button class=" fs-5">Inspect</button></a>
+                        <a href="https://maryamsendoo.github.io/EventTicketingWebSite/" target="_blank"> <button
+                                class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
 
@@ -94,7 +116,8 @@
                         <p>Online Voting System using voter ID authentication</p>
                     </div>
                     <div class="btn_box">
-                        <a href="https://maryamsendoo.github.io/NigeriaAutomatedVotingSystem/" target="_blank"><button class=" fs-5">Inspect</button></a>
+                        <a href="https://maryamsendoo.github.io/NigeriaAutomatedVotingSystem/" target="_blank"><button
+                                class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
 
@@ -107,16 +130,18 @@
                         <p>Get answer to random question people usually ask.</p>
                     </div>
                     <div class="btn_box">
-                       <a href="https://maryamsendoo.github.io/Q-A/" target="_blank"> <button class=" fs-5">Inspect</button></a>
+                        <a href="https://maryamsendoo.github.io/Q-A/" target="_blank"> <button
+                                class=" fs-5">Inspect</button></a>
                     </div>
                 </div>
             </div>
         </section>
+   
 
-        
-        <!-- skills section  -->
-         <section id="skills">
-            <h2>Skills:</h2>
+
+           <!-- skills section  -->
+           <section id="skills">
+            <h2>My Skills:</h2>
             <div class="skills_container text-secondary">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 my-3 skills_description">
@@ -125,7 +150,8 @@
                         </div>
 
                         <div>
-                            <p class="text mx-2">Comfortable with creating well-structured, semantic HTML for clean, readable and responsive web design. 
+                            <p class="text mx-2">Comfortable with creating well-structured, semantic HTML for clean,
+                                readable and responsive web design.
                         </div>
                     </div>
 
@@ -134,7 +160,8 @@
                             <img src="./Assets/Images/css.png" alt="" class="logo2 mx-3">
                         </div>
                         <div>
-                            <p class="text mx-2"> Experience with modern CSS3 techniques including Animation, flexbox and Grid for 
+                            <p class="text mx-2"> Experience with modern CSS3 techniques including Animation, flexbox
+                                and Grid for
                                 layouts, ensuring visually appealling user interfaces.</p>
                         </div>
                     </div>
@@ -144,8 +171,10 @@
                             <img src="./Assets/Images/bstp1.png" alt="" class="logo2 mx-3">
                         </div>
                         <div>
-                            <p class="text mx-2">Proficient in Bootstrap to develop responsive, mobile-first designs with ease, 
-                                 ensuring aesthetics, consistency, and efficiency across various screen sizes and devices.
+                            <p class="text mx-2">Proficient in Bootstrap to develop responsive, mobile-first designs
+                                with ease,
+                                ensuring aesthetics, consistency, and efficiency across various screen sizes and
+                                devices.
                             </p>
                         </div>
                     </div>
@@ -155,8 +184,10 @@
                             <img src="./Assets/Images/js.png" alt="" class="logo1">
                         </div>
                         <div>
-                            <p class="text mx-2"> Capable of writing clean, modular JavaScript, employing the  latest ES6+ 
-                                features such as arrow  functions, promises, tenary operator, and object destructuring, with a strong 
+                            <p class="text mx-2"> Capable of writing clean, modular JavaScript, employing the latest
+                                ES6+
+                                features such as arrow functions, promises, tenary operator, and object destructuring,
+                                with a strong
                                 focus on functionality and interactivity.
                             </p>
                         </div>
@@ -167,7 +198,8 @@
                             <img src="./Assets/Images/rct2 (1).png" alt="" class="logo1 rct_bg mx-3">
                         </div>
                         <div>
-                            <p class="text mx-2"> Familiar with component-based architecture, state management (using hooks like
+                            <p class="text mx-2"> Familiar with component-based architecture, state management (using
+                                hooks like
                                 useState, useEffect), and using React Router for smooth, and intuitive navigation.
                             </p>
                         </div>
@@ -178,72 +210,53 @@
                             <img src="./Assets/Images/git.png" alt="" class="logo1 rct_bg mx-3">
                         </div>
                         <div>
-                            <p class="text mx-2"> Proficient in Git for version control and collaboration. Familiar with GitHub
-                                 workflows, including branching, merging, and resolving conflicts, to efficiently manage project development
-                                  and network.
+                            <p class="text mx-2"> Proficient in Git for version control and collaboration. Familiar with
+                                GitHub
+                                workflows, including branching, merging, and resolving conflicts, to efficiently manage
+                                project development
+                                and network.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
 
+        <!-- about section  -->
 
-         <!-- Experience section  -->
-         <section id="experience">
-            <h2>Experience:</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <p> <strong>Budget Tracking Application:</strong> Build a budgeting app that allows users to input expenses and track their 
-                        remaining budget. Integrated local storage to save user data and used JavaScript to manage dynamic updates
-                         to totals and balances.
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <p><b>Personal Portfolio Website: </b> Developed a fully responsive portfolio website using 
-                    HTML, CSS, and bootstrap, showcasing my web development projects and skills. The site includes smooth 
-                navigation and mobile-friendly.</p>
-                </div>
-            </div>
-         </section>
-
-
-         <!-- about section  -->
-
-         <section id="about">
+        <section id="about">
             <div class="inner_bg">
-               <div class="outer_bg">
-                <!-- <h2>What you should know about me:</h2> -->
-                <h3>Apenumbe Mary Msendoo</h3>
-                <p>Front-End Developer/Baker</p>
-                <p>know:</p>
-                <p>I am a passionate and deducated front-end Web developer with a foundation in technologies 
-                    such as HTML, CSS Bootstrap, JavaScript and React. Throughout my Journey, I focus in creating dynamic, 
-                    responsive, and user-friendly web applications. I enjoy problem solving and am always eager 
-                    to learn and apply new technologies to improve my craft. 
-                </p>
+                <div class="outer_bg">
+                    <!-- <h2>What you should know about me:</h2> -->
+                    <h3>Apenumbe Mary Msendoo</h3>
+                    <p>Front-End Developer/Baker</p>
+                    <p>know:</p>
+                    <p>I am a passionate and deducated front-end Web developer with a foundation in technologies
+                        such as HTML, CSS Bootstrap, JavaScript and React. Throughout my Journey, I focus in creating
+                        dynamic,
+                        responsive, and user-friendly web applications. I enjoy problem solving and am always eager
+                        to learn and apply new technologies to improve my craft.
+                    </p>
 
-                <p>In addition to my Tech Journey, I am also a baker. This has allowed me to blend creativity and precision 
-                    in both the digital and culinary arts. I approach every project with attention to details and a 
-                    commitment to delivering quality results.
-                </p>
+                    <p>In addition to my Tech Journey, I am also a baker. This has allowed me to blend creativity and
+                        precision
+                        in both the digital and culinary arts. I approach every project with attention to details and a
+                        commitment to delivering quality results.
+                    </p>
 
-               </div>
+                </div>
             </div>
-         </section>
+        </section>
 
-<!-- cta section  -->
- <section id="cta">
-    <div class="">
-            <p>The only way to do great is to love what you do! </p>
-            <p>A passionate Front-End Developer.</p>
-    </div>
- </section>
-       
+        <!-- cta section  -->
+        <section id="cta">
+            <div class="">
+                <p>The only way to do great is to love what you do! </p>
+                <p>A passionate Front-End Developer.</p>
+            </div>
+        </section>
+
 
 
 
@@ -255,23 +268,24 @@
             <div class="icon_container">
                 <a href="https://www.linkedin.com/in/marya-msendoo-946186256" target="_blank">
                     <i class="fab fa-linkedin-in fa-2x icon"></i>
-                  </a>
+                </a>
 
-                  <a href="https://www.facebook.com/marymsendoo.apenumb" target="_blank">
+                <a href="https://www.facebook.com/marymsendoo.apenumb" target="_blank">
                     <i class="fab fa-facebook fa-2x icon"></i>
-                  </a>
+                </a>
 
-                  <a href="https://wa.me/qr/AOKRZKEABLW4F1" target="_blank">
+                <a href="https://wa.me/qr/AOKRZKEABLW4F1" target="_blank">
                     <i class="fab fa-whatsapp fa-2x icon"></i>
-                  </a>
+                </a>
 
-                  <a href="https://x.com/MaryA32146216?s=09 https://x.com/MaryA32146216?s=09" target="_blank">
+                <a href="https://x.com/MaryA32146216?s=09 https://x.com/MaryA32146216?s=09" target="_blank">
                     <i class="fab fa-twitter fa-2x icon"></i>
-                  </a>
+                </a>
             </div>
-            <p class="text pt-5">&copy;Mary Msendoo 2024</p>
-           <li class="fas fa-dial-call"></li> <p> 08057789650</p>
+            <li class="fas fa-dial-call"></li>
+            <p> 08057789650</p>
             <p><i>marymsen05@gmail.com</i></p>
+            <p class="text pt-5">&copy;Mary Msendoo 2024</p>
         </footer>
     </main>
 
@@ -290,8 +304,28 @@
 
     <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '0.5rem 2rem';
+                navbar.style.backgroundColor = 'rgba(41, 34, 45, 0.95)';
+            } else {
+                navbar.style.padding = '1rem 2rem';
+                navbar.style.backgroundColor = 'var(--primary)';
+            }
+        });
+    </script>
 </body>
 
 </html>
