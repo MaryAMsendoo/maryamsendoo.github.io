@@ -196,38 +196,12 @@ header{
   }
 }
 
-/* hero text animation */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-/* h2 animation */
-@keyframes fadeIn {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
 /* feature section  */
 #feature {
   height: auto;
 }
 
-/* to align both cards content inside card. */
+/* to align both cards and it content. */
 .feature_container, .project_card{
   justify-content: center;
   align-items: center;
@@ -261,22 +235,24 @@ header{
 }
 
 .project_img {
-  width: 100%;
   height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 .description{
    line-height: 1;
 }
 .description p{
   font-size: .8rem;
 }
+
 .project_img, .btn_box, .description{
     width: 100%;
   }
+  
 .btn_box {
   padding: 0px 0px 10px;
   border-radius: 0px 0px 5px 5px;
@@ -293,21 +269,6 @@ header{
   width: 90%;
 }
 
-/* card animation */
-@keyframes scale {
-  0% {
-    transform: scale(0.92);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(0.92);
-  }
-}
-
 /* skills section  */
 #skills{
   background-color: var(--primary-dark);
@@ -320,14 +281,15 @@ header{
 
 .skills_description{
   display: flex;
-
 }
+
 .skills_description p, .timeline-item p{
   line-height: 1.5;
   font-size: 1rem;
   text-align: left;
   color: #ccc;
 }
+
 .logo1{
   width: 90px;
 }
@@ -394,7 +356,6 @@ padding: 0;
 .outer_bg p{
   font-size: 1.2rem;
   line-height: 1.7;
-
 }
 
 .outer_bg p:nth-child(2){
@@ -421,10 +382,6 @@ footer{
   background-color: var(--primary);
   padding: 5% 10%;
   margin-top: 4%;
-
-}
-.footer_logo {
-  width: 80%; 
 }
 
 .icon_container{
@@ -432,7 +389,6 @@ footer{
   justify-content:center ;
   text-align: center;
   width: 100%;
-
 }
 
 footer .icon{
@@ -491,25 +447,29 @@ footer p{
 }
 
 
-@media(max-width: 440px){
+@media(max-width: 620px){
+
   #hero{
-    padding-top: 10%;
-    padding-bottom: 10% ;
+    padding-top: 20%;
+    padding-bottom: 20% ;
   }
 
   #hero h1{
     font-size: 2rem;
     font-family: "Sacramento-bold", "Montserrat", Arial, Helvetica, sans-serif;
   }
-
   #hero h2{
     font-size: 1rem;
+    z-index: 1;
+    position: relative;
   }
 
-  .cloud1, .cloud2{
-    width: 90px;
+  #hero .cloud1, #hero .cloud2{
+    width: 100px;
   }
-
+  .cloud1{
+    top: 150px;
+  }
   .cloud2{
     top: 270px;
   }
@@ -526,8 +486,6 @@ footer p{
     font-size: .7rem;
   }
 }
-
-
 
  /* Responsive Design */
  @media (max-width: 768px) {
