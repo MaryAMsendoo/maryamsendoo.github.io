@@ -107,15 +107,6 @@ section{
   width: 100%;
 }
 
-/* navigation bar  */
-.navbar.navbar_bg {
-  background-color: var(--color-light-gray);
-  color: var(--light);
-  font-weight: 500;
-  font-family: inherit;
-  padding: 1% 4%;
-}
-
 header{
   padding: auto 10px;
 }
@@ -235,7 +226,7 @@ header{
 
 .feature_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 19px;
   padding: 15px;
 }
