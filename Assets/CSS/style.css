@@ -108,7 +108,7 @@ section{
 }
 
 /* navigation bar  */
-.navbar.navbar_bg {
+.navbar.navbar_bg{
   background-color: var(--color-light-gray);
   color: var(--light);
   font-weight: 500;
