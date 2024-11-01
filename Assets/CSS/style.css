@@ -107,15 +107,6 @@ section{
   width: 100%;
 }
 
-/* navigation bar  */
-.navbar.navbar_bg {
-  background-color: var(--color-light-gray);
-  color: var(--light);
-  font-weight: 500;
-  font-family: inherit;
-  padding: 1% 4%;
-}
-
 header{
   padding: auto 10px;
 }
