@@ -457,7 +457,7 @@ header {
 }
 
 #about .inner_bg {
-  background-image: url('../Images/bg2.png');
+  background-image: url('/Assets/Images/bg2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -661,5 +661,100 @@ footer p {
 
   .tools-grid {
     grid-template-columns: repeat(8, 1fr);
+  }
+}
+/* Tool icon hover (previously applied with inline JS in index.html) */
+.tool-item i {
+  transition: transform 0.3s ease;
+}
+
+.tool-item:hover i {
+  transform: scale(1.2);
+}
+
+/* Tool icon hover (previously applied with inline JS in index.html) */
+.tool-item i {
+  transition: transform 0.3s ease;
+}
+
+.tool-item:hover i {
+  transform: scale(1.2);
+}
+
+/* Font Awesome icons inside skill cards (backend row) */
+.skill-icon i {
+  color: var(--color1);
+  font-size: 1.6rem;
+}
+
+/* Experience section */
+#experience {
+  background-color: var(--background);
+  padding: 5% 8%;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid var(--secondary);
+  padding: 1.5rem 2rem;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.experience-role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+
+.experience-company {
+  color: var(--color-light-gray);
+  font-size: 1rem;
+  margin: 0.25rem 0 0;
+}
+
+.experience-period {
+  background-color: var(--primary);
+  color: var(--color-light1);
+  border-radius: 10px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.experience-points {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+@media (max-width: 620px) {
+  .experience-card {
+    padding: 1.2rem;
   }
 }
