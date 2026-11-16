@@ -13,13 +13,9 @@ export default function About() {
             applications using React, Next.js and TypeScript. I’m skilled in translating Figma
             designs and product requirements into clean, reusable interfaces and integrating REST
             APIs. I’m also experienced in backend development with Node.js, Express and PostgreSQL,
-            including authentication, payment integrations, automated testing and deployment.
+            including authentication, third-party integrations, automated testing and deployment.
           </p>
-          <p>
-            I recently led the development and production launch of Attractions by Vera, a
-            full-stack e-commerce platform. I hold a B.Sc. in Computer Science from Kwararafa
-            University and completed the 3MTT Software Development Programme.
-          </p>
+          
           <p>
             Outside of technology, I’m a baker who enjoys creating and experimenting with different
             baked goods. Baking gives me another way to be creative, patient, and detail-oriented
